@@ -70,6 +70,10 @@ M.general = {
     ["n"] = { "nzz" },
     ["N"] = { "Nzz" },
 
+    -- Move to start/end of line
+    ["H"] = { "^" },
+    ["L"] = { "$" },
+
     -- go to ending bracket of function
     ["E"] = { "$%" },
 
@@ -83,6 +87,9 @@ M.general = {
       end,
       "toggle transparency",
     },
+
+    -- map enter to ciw in normal moade
+    ["<CR>"] = { "ciw" },
   },
 
   t = {
@@ -96,6 +103,14 @@ M.general = {
     -- move command on highlighted lines of code
     ["J"] = { ":m '>+1<CR>gv=gv" }, -- upward
     ["K"] = { ":m '<-2<CR>gv=gv" }, -- downward
+
+    -- stay in visual mode when changing the indent for the selection
+    ["<"] = { "<gv" },
+    [">"] = { ">gv" },
+
+    -- Move to start/end of line
+    ["H"] = { "^" },
+    ["L"] = { "$" },
   },
 
   x = {

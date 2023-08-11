@@ -18,7 +18,9 @@ local options = {
     "html",
     "css",
     "markdown",
+    "markdown_inline",
     "svelte",
+    "prisma",
     "graphql",
     "bash",
     "lua",
@@ -39,6 +41,9 @@ local options = {
   context_commentstring = {
     enable = true,
     enable_autocmd = false,
+  },
+  markdown = {
+    enable = true,
   },
 }
 
