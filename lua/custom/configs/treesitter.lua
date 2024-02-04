@@ -2,7 +2,6 @@ local options = {
   -- enable syntax highlighting
   highlight = {
     enable = true,
-    use_languagetree = true,
     disabled = {},
   },
   -- enable indentation

@@ -8,6 +8,7 @@ local options = {
   hijack_cursor = true,
   hijack_unnamed_buffer_when_opening = false,
   sync_root_with_cwd = true,
+  respect_buf_cwd = true,
   update_focused_file = {
     enable = true,
     update_root = false,
@@ -16,7 +17,6 @@ local options = {
     adaptive_size = false,
     side = "left",
     width = 30,
-    hide_root_folder = true,
     preserve_window_proportions = true,
   },
   git = {
@@ -32,6 +32,7 @@ local options = {
     },
   },
   renderer = {
+    root_folder_label = false,
     highlight_git = false,
     highlight_opened_files = "none",
 
@@ -48,15 +49,15 @@ local options = {
       },
 
       glyphs = {
-        default = "",
+        default = "󰈚",
         symlink = "",
         folder = {
-          default = "",
-          empty = "",
-          empty_open = "",
+          default = "",
+          empty = "",
+          empty_open = "",
           open = "",
-          symlink = "",
-          symlink_open = "",
+          symlink = "",
+          symlink_open = "",
           arrow_open = "",
           arrow_closed = "",
         },
